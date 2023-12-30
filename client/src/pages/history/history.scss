@@ -1,0 +1,102 @@
+.history-main{
+    background-image: url("https://static.israel21c.org/www/uploads/2022/03/jan-kopriva-unsplash-1520x855.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center center center;
+    background-attachment: fixed;
+    // object-position: center;
+    height:100%;
+
+    .history-head{
+     text-align: center;
+     
+    //  width: 100%;
+    
+     
+    }
+    .history-nav{
+        // background: blue;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2vw;
+       button{
+        border-radius: 5px;
+        border: none;
+        padding: 5px 10px;
+        font-size: 18.5px;
+        box-shadow: 0px 0px 10px 0px;
+        cursor: pointer;
+       }
+        // height: 100px;
+    .history-select{
+        // background: blue;
+        font-size: 20px;
+       select{
+        // background-color: blue;
+        width: 130px;
+        font-size: inherit;
+        padding: 5px;
+        box-shadow: 0px 0px 10px 0px;
+
+       }
+       select:focus{
+        outline:none;
+       }
+       label{
+         background: white;
+         padding: 5px;
+         margin: 2px;
+         box-shadow: 0px 0px 10px 1px;
+       }
+    }
+}
+.history-contents{
+    margin:0px 10px 0px 10px;
+    padding:1px;
+  
+    h3{
+        padding: 10px;
+        
+        background: white;
+          font-size:large;
+            margin:10px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+    }
+    .history-content{
+
+        .imagepath{
+            display: none;
+        }
+
+        div{
+            padding: 5px 5px;
+            margin:0px 15px 0px 15px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: white;
+            width: 95%;
+        .not-prof-img{
+            width: 5vw;
+            height: 5vw;
+            margin-right: 1vw;
+            border-radius: 100px;
+
+        }
+        .ww{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+        span{
+            font-weight: bolder;
+            color: green;
+
+        }
+    }
+       }   
+    }

@@ -1,0 +1,191 @@
+@import "../../style.scss";
+
+.profile {
+  @include themify($themes) {
+    background-color: themed("bgSoft");
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .images {
+      width: 100%;
+      height: 120px;
+      position: relative;
+
+      .profilePic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 20px;
+        z-index: 1;
+      }
+    }
+
+    .profileContainer {
+      padding: 20px 70px;
+
+      @include mobile {
+        padding: 10px;
+      }
+
+      @include tablet {
+        padding: 20px;
+      }
+
+      .uInfo {
+        height: 180px;
+        -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        border-radius: 20px;
+        background-color: themed("bg");
+        color: themed("textColor");
+        padding: 10px;
+        align-items: center;
+        margin-bottom: 20px;
+        position: relative;
+        height: 100%;
+        @include mobile {
+          flex-direction: column;
+          height: 30vh;
+          padding: 20px;
+          margin-top: 100px;
+        }
+
+        .VertIcon {
+          position: absolute;
+          top: 10px;
+          right: 5px;
+          z-index: 1;
+          cursor: pointer;
+
+          .Ul {
+            position: absolute;
+            list-style: none;
+            top: 15px;
+            right: 9px;
+            padding: 10px 12px;
+            width: 130.1px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.38);
+            border-radius: 5px;
+            transition: opacity 0.15s ease-in-out;
+            background-color: white;
+            li {
+              transition: 0.5s;
+              padding: 5px 8px;
+              font-size: 14px;
+            }
+
+            li:hover {
+              background-color: rgb(209, 206, 206);
+              border-radius: 5px;
+            }
+          }
+
+          .Ul-hide {
+            position: absolute;
+            list-style: none;
+            top: 15px;
+            right: 9px;
+            // gap: 10px;
+            padding: 10px 12px;
+            width: 130.1px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.38);
+            border-radius: 5px;
+            transition: opacity 0.15s ease-in-out;
+            opacity: 0;
+
+            li {
+              font-size: 14px;
+              transition: 0.5s;
+              padding: 5px 8px;
+            }
+
+            li:hover {
+              background-color: rgb(191, 185, 185);
+              border-radius: 5px;
+            }
+          }
+        }
+        .PI{
+          width: 100%;
+          margin-top: 60px;
+          margin-bottom: 40px;
+          margin-left: 20px;
+
+          hr{
+            margin-top: 20px;
+          }
+          .Name{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-left: 10px;
+            
+            span{
+            //  text-align: left;
+              padding: 15px  100px 15px 10px;
+              // background-color: rgb(141, 141, 137);
+              border: 1px solid rgb(103, 101, 101);
+              align-items: center;
+              margin-right:5% ;
+              width:20%; 
+              margin-top: 10px; 
+              color: black;
+            }
+          }
+          .email{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+           
+            margin-left: 10px;
+            span{
+              padding: 15px  100px 15px 10px;
+              // background-color: rgb(141, 141, 137);
+              border: 1px solid rgb(103, 101, 101);
+              align-items: center;
+              margin-right:-80px ;
+              width: 30%; 
+              color: black;
+            }
+
+          }
+          .MN{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+           
+            margin-left: 10px;
+            span{
+              padding: 15px  100px 15px 10px;
+              // background-color: rgb(141, 141, 137);
+              border: 1px solid rgb(103, 101, 101);
+              align-items: center;
+              margin-right:-80px ;
+              width: 30%;
+              color: black;
+            }
+
+          }
+          p{
+            margin-left: 11px;
+          }
+          .gender{
+            margin-left: 11px;
+            display: flex;
+            gap: 30px;
+          }
+         
+        }
+
+
+
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.contact-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  background-image: url("https://media.istockphoto.com/id/926547380/photo/green-agriculture-fields-and-sunset-in-blue-sky-with-clouds.jpg?s=1024x1024&w=is&k=20&c=NV50AT-XWc1HIS5zldI8XO9eWqmNMX6IMcIoFAwZywI=");
+}
+
+.Container {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  
+}
+
+select {
+  width: 350px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  // margin-right: -40px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #0a0a0a;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #0e0c0c;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .contact-details,
+  .contact-form {
+    flex: 1;
+    padding: 10px;
+    margin-right: 35px;
+  }
+}
+
+.contact-details,
+.contact-form {
+  // margin-right: 35px;
+  // width: 100%;
+  h3 {
+    font-size: 1.5rem;
+    color: #0c0c0c;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #0e0d0d;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 1.1rem;
+    color: #0a0a0a;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    resize: none;
+    margin-top: 0px;
+    // margin-right: 100px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

@@ -1,0 +1,198 @@
+@import "../../style.scss";
+
+.rightbars {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+
+  .rightBar {
+    @include themify($themes) {
+      flex: 3;
+      position: sticky;
+      top: 70px;
+      height: calc(100vh - 70px);
+      overflow: scroll;
+        background-color:rgb(154, 251, 154);
+
+
+      @include mobile {
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .container {
+        padding: 20px;
+        // margin: 20px 20px ;
+        
+        .item {
+          background-color: #9bdeac;
+          position: relative;
+          -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+          -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+          padding: 20px;
+          margin-bottom: 20px;
+          // background-color: themed("bg");
+
+          span {
+            color: gray;
+          }
+
+          p {
+            color: black;
+            font-size: 27px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+          }
+
+          hr {
+            margin: 15px -20px;
+          }
+
+          .filter-1 {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+              width: 20px;
+            }
+
+            span {
+              color: black;
+              font-size: 20px;
+            }
+          }
+
+          .boxes {
+            // position: absolute;
+            // margin-top: 10px;
+            margin-left: 20px;
+            transition: height 0.15s;
+            height: 120px;
+          }
+
+          .boxes-2 {
+            // position: absolute;
+            // margin-top: 10px;
+            margin-left: 20px;
+            transition: height 0.15s;
+            height: 245px;
+          }
+
+          .boxes-hide {
+            height: 0px;
+            // margin-top: 10px;
+            margin-left: 20px;
+
+            overflow: hidden;
+
+            transition: height 0.15s;
+          }
+
+          .State {
+            // display: none;
+            // width: 10px;
+            margin-left: 23px;
+            margin-top: 15px;
+            height: 30px;
+            transform: height 1s;
+            #states {
+              width: 160px;
+              height: 30px;
+              color: rgb(134, 127, 127);
+              border-color: rgb(134, 127, 127);
+              border: 2px solid rgb(134, 127, 127);
+              transform: height 1s;
+            }
+
+           
+          }
+          .State-hide {
+            // height: 0px;
+            margin-left: 23px;
+            margin-top: 15px;
+            height: 0px;
+            transform: height 1s;
+            #states {
+              display: none;
+              // width: 0px;
+              // height: 0px;
+              transform: height 1s;
+           
+            }
+          }
+
+          .user {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0px;
+
+            .userInfo {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              position: relative;
+
+              img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+
+              .online {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: limegreen;
+                position: absolute;
+                top: 0;
+                left: 30px;
+              }
+
+              p {
+                color: themed("textColorSoft");
+              }
+
+              span {
+                font-weight: 500;
+                margin-right: 10px;
+                color: themed("textColor");
+              }
+            }
+
+            .buttons {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              button {
+                border: none;
+                padding: 5px;
+                color: white;
+                cursor: pointer;
+
+                &:first-child {
+                  background-color: #5271ff;
+                }
+
+                &:last-child {
+                  background-color: #f0544f;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.profile{
+    .profileContainer{
+        .uInfo{
+            .file-upload{
+                width: 100%;
+                margin-left: 5%;
+                margin-bottom: 30px;
+                h1{
+                    margin-top: 30px;
+                    color: black;
+                }
+                hr{
+                    margin: 30px 0px 30px 0px;
+                    width: 94%;
+                }
+                .F-L{
+                    display: flex;
+                    // margin-left: 5%;
+                    .F-name-container{
+                        position: relative;
+                        display: grid;
+                        border: 1px solid rgb(215, 210, 210);
+                        border-radius: 5px;
+                        padding: 1rem .5rem 0.3rem 0.5rem;
+                        height: 25px;
+                        width: 40%;
+                        margin-bottom: 40px;
+                        margin-right: 5%;
+                        #form-name{
+                            border: none;
+                            font-size: 15px;
+                            width: 100%;
+                        }
+                        #states{
+                            width: 100%;
+                            border: none;
+                        }
+                        .name-L{
+                            position: absolute;
+                            top: 6px;
+                            left: 0px;
+                            font-size: 15px;
+                            letter-spacing: 0.1px;
+                            color: #6f6e6e;
+                            padding: 10px; 
+                            transition: 0.2s;
+                        }
+                        .f-name-L{
+                            position: absolute;
+                            top: -7px;
+                            left: 0px;
+                            font-size: 12px;
+                            color: #6f6e6e;
+                            letter-spacing: 0.1px;
+                            padding: 10px; 
+                            transition: 0.2s; 
+                        }
+                        .State-name{
+                            position: absolute;
+                            color: #6f6e6e;
+                            letter-spacing: 0.1px;
+                            font-size: 12px;
+                            top: -7px;
+                            padding: 10px;
+                            left: 0; 
+                        }
+                    }
+                    .F-name-container input:focus {
+                        border:none; 
+                        outline: none;
+                    }
+                    .F-name-container input:focus + label{
+                        top: -7px;
+                        left: 0px;
+                        font-size: 12px;
+                    }
+                    .F-name-container select:focus {
+                        border:none; 
+                        outline: none;
+                    }
+                }
+                .input-container{
+                    position: relative;
+                    display: grid;
+                    border: 1px solid rgb(215, 210, 210);
+                    border-radius: 5px;
+                    padding: 2rem 1.5rem 1.5rem 0.8rem;
+                    height: 40px;
+                    width: 84%;
+                    margin-bottom: 40px;
+                    // margin-left: 3%;
+                    #myTextarea{
+                        height: 40px;
+                        width:  100%;
+                        font-size: 17px;
+                        border: none;
+                        resize: none;
+                    }
+                    .L {
+                        position: absolute;
+                        top: 29px;
+                        left: 5px;
+                        font-size: 15px;
+                        letter-spacing: 0.1px;
+                        color: #6f6e6e;
+                        padding: 10px; /* Adjust padding as needed */
+                         /* Allow clicks to pass through the label to the input */
+                        transition: 0.4s; /* Add smooth transition animations */
+                    }
+                    .focus-L{
+                      position: absolute;
+                      top: 0px;
+                      left: 5px;
+                      font-size: 12px;
+                      color: #6f6e6e;
+                      letter-spacing: 0.1px;
+                      padding: 10px; /* Adjust padding as needed */
+                       /* Allow clicks to pass through the label to the input */
+                      transition: 0.4s; /* Add smooth transition animations */
+                    }
+                }
+                .input-container textarea:focus {
+                    border:none; 
+                    outline: none;/* Change border color when textarea is focused */
+                }
+                .input-container textarea:focus + label{
+                  top: 0px;
+                  left: 5px;
+                  font-size: 12px;
+                
+                }
+            }
+            
+            .bttns{
+                display: flex;
+                justify-content: space-evenly;
+                .btttn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: rgb(0, 0, 0);
+                    opacity: 1;
+                    color: white;
+                    font-size: 17px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+                    width: 30%;
+                    justify-items: center;
+                    border: 0;
+                }
+            }
+            .btttn:hover {
+                background-color: rgb(191, 185, 185);
+                color: black;
+            }
+        }
+    }
+}

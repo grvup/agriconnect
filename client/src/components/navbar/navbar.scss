@@ -1,0 +1,225 @@
+@import "../../style.scss";
+
+.navbar {
+  @include themify($themes) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 50px;
+    border-bottom: 1px solid themed("border");
+    position: sticky;
+    top: 0px;
+    // background-color: themed("bg");
+    background-color: #9bdeac;
+    color:themed("textColor");
+    z-index: 999;
+    
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+     .left-icons{
+      display: flex;
+       gap: 25px;
+     }
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        color: themed("logo");
+      }
+      .logo{
+        width: 100px;
+      }
+     
+    }
+    .search {
+      display: flex;
+      
+      align-items: center;
+      gap: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 5px;
+      width: 40%;
+      margin: 0 10px;
+      input {
+        border: none;
+        width: 500px;
+        background-color: transparent;
+        color: themed("textColor");
+
+        @include mobile{
+          display: none;
+        }
+
+        @include tablet{
+          width: 200px;
+        }
+      }
+      input::placeholder{
+        color: black;
+      }
+    }
+    .Menu-icon{
+      cursor: pointer;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @include mobile{
+        display: none;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 25px;
+
+        @include tablet{
+          display: none;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:800px) {
+  .navbar{
+    @include themify($themes){
+      .left{
+        .left-icons{
+          display: none;
+        }
+      }
+     
+      .right{
+        display: none;
+      }
+      .bottom{
+        // display: none;
+        background-color: #9bdeac;
+        position: absolute;
+        top: 95px;
+        width: 22.2%;
+        height: 990%;
+        left: 0;
+        padding: 5px 10px;
+        transition: left  0.75s ;
+        
+        .Close-icon{
+            position: absolute;
+            background-color: #9bdeac;
+            padding: 5px 5px 0 5px;
+            top: 0px;
+            left: 187px;
+            cursor: pointer;
+            transition: left  0.75s ;
+        }
+        ul{
+          list-style: none;
+          margin-left: -30px;
+          display: grid;
+        
+          li{
+            margin-bottom: 20px;
+            font-size: 18px;
+            hr{
+              border:1px solid black;
+              width: 100%;
+              margin-left: -5px;
+            }
+            .Li{
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              transition: 0.25s;
+            }
+            h2{
+              position: absolute;
+              top: 500px;
+              left: 15%;
+            }
+        
+          }
+          li .Li:hover{
+            // background-color: white;
+            padding-left: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      .bottom-hide{
+        background-color: #9bdeac;
+        position: absolute;
+        top: 95px;
+        width: 22.2%;
+        height: 690%;
+        left: -200px;
+        padding: 5px 10px;
+        transition: left  0.75s ;
+        
+        .Close-icon{
+          position: absolute;
+          background-color: #9bdeac;
+          padding: 5px 5px 0 5px;
+          top: 0px;
+          left: -45px;
+          transition: left  0.75s ;
+      }
+        ul{
+          list-style: none;
+          margin-left: -30px;
+          display: grid;
+          
+          li{
+            margin-bottom: 20px;
+            font-size: 18px;
+            hr{
+              border:1px solid black;
+              width: 100%;
+              margin-left: -5px;
+            }
+            .Li{
+              display: flex;
+              align-items: center;
+              gap: 20px;
+            }
+            h2{
+              position: absolute;
+              bottom: 20px;
+              left: 15%;
+            }
+          }
+         
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:801px) {
+  .navbar{
+    @include themify($themes){
+      .bottom{
+        display: none;
+      }
+      .Menu-icon{
+        display: none;
+        // transform: rotate(360deg);
+      }
+      .bottom-hide{
+        display: none;
+      }
+    }
+  }
+}

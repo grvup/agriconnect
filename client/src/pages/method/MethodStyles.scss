@@ -1,0 +1,52 @@
+// MethodStyles.scss
+
+.method-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(8, 8, 8, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.method-title {
+  font-size: 2rem;
+  color: #0e0e0e;
+  margin-bottom: 20px;
+}
+
+.method-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #090909;
+  margin-bottom: 20px;
+}
+
+.method-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .method-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .method-name {
+    font-size: 1.5rem;
+    color: #0a0a0a;
+    margin-bottom: 10px;
+  }
+
+  .method-info {
+    font-size: 1.1rem;
+    color: #0c0c0c;
+  }
+
+  .method-video {
+    max-width: 100%;
+  }
+}
