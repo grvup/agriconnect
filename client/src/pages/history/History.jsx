@@ -94,6 +94,7 @@ export default function History() {
             value={selectedYear}
             onChange={handleYearChange}>
             <option value="This year">This year</option>
+            <option value="2023">2023</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>

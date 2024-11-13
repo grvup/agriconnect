@@ -1,5 +1,5 @@
 import express from "express";
-import { addAddress, addWorker } from "../controllers/post.js";
+import { addAddress, addWorker,hireWorker } from "../controllers/post.js";
 import multer from "multer";
 const router = express.Router()
 
@@ -17,6 +17,6 @@ const storage = multer.diskStorage({
   
   router.post("/worker",upload.single("file"), addWorker);
   router.post("/address/:userId", addAddress);
-
+  router.post("/hireworker",hireWorker);
 
 export default router;

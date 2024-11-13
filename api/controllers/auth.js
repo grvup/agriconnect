@@ -23,7 +23,7 @@ export const register = (req, res) => {
       hashedPassword,
       req.body.name,
     ];
-   // console.log(1)
+    console.log(req.body.user_name)
     console.log(req.body.email)
     console.log(hashedPassword)
     console.log(req.body.name)

@@ -16,7 +16,7 @@ const Leftbars = ({userId}) => {
           ? "Something went wrong!"
           : isLoading
           ? "loading"
-          : data.map((post) => <Leftbar post={post} key={post.id} />)}
+          : data.map((post) => <Leftbars post={post} key={post.id} />)}
       </div>
     );
   };

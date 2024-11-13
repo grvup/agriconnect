@@ -11,7 +11,7 @@ export const gethistory = (req, res) => {
   
     // const season = queryKey[1]; // 'kharif'
     // const year = queryKey[2];
-    year = year === "This year" ? 2023 : season;
+    year = year === "This year" ? 2024 : season;
     const q = "SELECT * FROM worker WHERE worker_id = (SELECT worker_id FROM season WHERE season.season_name=? AND season.season_year=? AND season.hirerid=? ); "
     // console.log(year)
     db.query(q, 
